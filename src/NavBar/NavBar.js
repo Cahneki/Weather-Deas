@@ -23,7 +23,7 @@ function Navbar() {
         alt=""
       />
       <nav ref={navRef}>
-        <NavLink className="nav-link" to="./HomePage">
+        <NavLink className="/" to="./HomePage">
           Home
         </NavLink>
         <NavLink className="nav-link" to="./SubmitPage">

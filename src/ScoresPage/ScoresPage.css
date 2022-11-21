@@ -143,3 +143,29 @@
     background-color: #000000;
 
   }
+
+  .side-content h1{
+    color: purple;
+    position: left;
+    left: 36px;
+  }
+
+  .btn-group button {
+    background-color: purple; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    display: block;
+   
+  
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: black;
+  }
+

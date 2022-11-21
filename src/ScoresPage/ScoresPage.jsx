@@ -49,8 +49,23 @@ function ScoresPage() {
   <div className="btn-7">
   <button>Weather Channel</button>
   </div>
-  
-    </>
+
+  <div className="side-content">
+      <h1>Past Dates</h1>
+    </div>
+    <div className="sideDate-content">
+    <div class="btn-group">
+  <button>date</button>
+  <button>date</button>
+  <button>date</button>
+</div>
+    </div>
+    <br />
+    <br />
+  </>
+    
+
+
   )
 }
 
