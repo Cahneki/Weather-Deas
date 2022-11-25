@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
-  color: purple;
+  color: #555;
 }
 
 html {
@@ -41,6 +41,7 @@ header {
 nav a:hover {
   color: var(--secondaryColor);
 }
+
 
 header .nav-btn {
   padding: 0.1rem;

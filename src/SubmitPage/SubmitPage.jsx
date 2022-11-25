@@ -1,19 +1,24 @@
 import React from 'react';
 import './SubmitPage.css';
 import Navbar from '../NavBar/NavBar';
-import { NavLink } from 'react-router-dom';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from "@fullcalendar/interaction";
+import { useNavigate } from 'react-router';
 
 
 
-function SubmitPage() {
+
+function SubmitPage() { 
+    const navigate = useNavigate();
+    
     return(
         <>
-        <Navbar />
+        <Navbar/>
         
         <FullCalendar
-        plugins={[ dayGridPlugin]}
+        plugins={[ dayGridPlugin, interactionPlugin]}
+        eventContent={renderEventContent}/*USE FORM HOOKS TO PUT FORM IN DATES */
         initialView="dayGridMonth"
         headerToolbar={{
             left:'prev,next today',
@@ -22,17 +27,24 @@ function SubmitPage() {
                 }}
         weekends={false}
         navLinks={true}
-        navLinkDayClick={
-            <NavLink className="/" to="./HomePage">
-          Home
-        </NavLink>
-        }
+        navLinkDayClick={()=>navigate("/SubmitForm")}
         />
+        
         </>
         
     )
     
 }
+
+function renderEventContent(eventInfo) {/*USE FORM HOOKS TO PUT FORM IN DATES */
+    return (
+      <>
+        <b>{eventInfo.timeText}</b>
+        <i>{eventInfo.event.title}</i>
+      </>
+    )
+  }
+  
 
 
 

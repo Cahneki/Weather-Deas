@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../HomePage/homepage.scss';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../HomePage/UALogo.png';
 
 function Navbar() {
@@ -23,15 +23,18 @@ function Navbar() {
         alt=""
       />
       <nav ref={navRef}>
-        <NavLink className="/" to="./HomePage">
+        <Link className="nav-link" to="/">
           Home
-        </NavLink>
-        <NavLink className="nav-link" to="./SubmitPage">
+        </Link>
+        <Link className="nav-link" to="/SubmitPage">
           Submit
-        </NavLink>
-        <NavLink className="nav-link" to="./ScoresPage">
+        </Link>
+        <Link className="nav-link" to="/ScoresPage">
           Prior Scores
-        </NavLink>
+        </Link>
+        <Link className="nav-link" to="/LoginPage">
+          Logout
+        </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

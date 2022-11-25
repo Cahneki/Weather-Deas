@@ -4,7 +4,9 @@ import Navbar from '../NavBar/NavBar';
 
 function HomePage() {
   return (
+    
     <>
+    
       <Navbar />
       <div className="main-content">
         <div className="top-content">
