@@ -97,3 +97,18 @@
 .dropdown2:hover .dropbtn2 {
   background-color: #000000;
 }
+
+
+
+
+.Tab1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.Tab1 table {
+  width: 70%;
+  margin-left: 15%;
+}

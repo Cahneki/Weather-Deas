@@ -2,12 +2,17 @@ import React from 'react';
 import './homepage.scss';
 import Navbar from '../NavBar/NavBar';
 
+
+
 function HomePage() {
+
+  
   return (
     
     <>
     
       <Navbar />
+      
       <div className="main-content">
         <div className="top-content">
           <h1>Welcome to the UAlbany Weather Contest</h1>
@@ -76,6 +81,7 @@ function HomePage() {
           </table>
         </div>
       </div>
+
     </>
   );
 }

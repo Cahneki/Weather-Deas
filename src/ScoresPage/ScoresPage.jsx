@@ -1,6 +1,7 @@
 import React from 'react';
 import './ScoresPage.css';
 import Navbar from '../NavBar/NavBar';
+import { useState } from 'react';
 
 const data = [
   { number: 1, name: 'Danielle Ehresman', entries: 12, score: 65.26 },
@@ -10,8 +11,13 @@ const data = [
   { number: 5, name: '*NWS*', entries: 12, score: 41.65 },
 ]
 function ScoresPage() {
+  const ScoresPage = () => {
+    const [show, setShow] = useState(false);
   return(
+  
     <>
+      <button onClick={() => setShow(prev => !prev)}>Click</button>
+      {show && <div>This is your component</div>}
     <Navbar />
     <div className="main-content">
       <h1>DAES Contest Score Viewer</h1>
@@ -45,7 +51,7 @@ function ScoresPage() {
     <br />
 
 
-<div className="App">
+<div className="Tab1">
       <h1>Composite Ranking of Forecasters</h1>
       <table>
         <thead>
@@ -72,6 +78,10 @@ function ScoresPage() {
         </tbody>
       </table>
     </div>
+
+    
+
+
   </>
     
 
