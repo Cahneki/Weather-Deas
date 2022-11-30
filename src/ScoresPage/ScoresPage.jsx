@@ -11,13 +11,9 @@ const data = [
   { number: 5, name: '*NWS*', entries: 12, score: 41.65 },
 ]
 function ScoresPage() {
-  const ScoresPage = () => {
-    const [show, setShow] = useState(false);
   return(
   
     <>
-      <button onClick={() => setShow(prev => !prev)}>Click</button>
-      {show && <div>This is your component</div>}
     <Navbar />
     <div className="main-content">
       <h1>DAES Contest Score Viewer</h1>

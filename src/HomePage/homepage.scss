@@ -30,6 +30,20 @@ header {
   color: var(--textColor);
 }
 
+header .image1  {
+  height: 60px;
+  margin-top: 1.2px;
+  margin: -20px;
+}
+
+
+header .image2  {
+  height: 60px;
+  margin-top: 1.2px;
+  margin-left: -31%;
+  
+}
+
 .nav-link {
   margin: 0 1rem;
   color: var(--textColor);
@@ -196,4 +210,8 @@ td {
     flex-direction: column;
     justify-content: space-evenly;
   }
+}
+
+.main-content .Plot {
+  float: left;
 }

@@ -5,6 +5,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from "@fullcalendar/interaction";
 import { useNavigate } from 'react-router';
+import SubmitForm from '../SubmitForm/SubmitForm';
 
 
 
@@ -39,8 +40,10 @@ function SubmitPage() {
 function renderEventContent(eventInfo) {/*USE FORM HOOKS TO PUT FORM IN DATES */
     return (
       <>
+      
         <b>{eventInfo.timeText}</b>
         <i>{eventInfo.event.title}</i>
+        <SubmitForm/>
       </>
     )
   }

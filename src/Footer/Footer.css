@@ -1,0 +1,36 @@
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: purple;
+    height: 15%
+  }
+
+  
+  p .s1 {
+    color: whitesmoke;
+    float: left;
+    margin-top: 260px;
+    margin-left: 15px;
+    
+  }
+
+  p .links a {
+    margin: -8px;
+    float: right;
+    color: whitesmoke;
+    margin-top: 260px;
+    margin-right: 15px;
+  }
+
+  p .links u {
+    color: whitesmoke;
+  }
+  
+  p .s2 {
+    color: whitesmoke;
+    float: right;
+   margin-top: 260px;
+   margin-right: 15px;
+  }

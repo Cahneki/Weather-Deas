@@ -5,6 +5,7 @@ import ScoresPage from './ScoresPage/ScoresPage.jsx';
 import LoginPage from './LoginPage/LoginPage.jsx';
 import SubmitForm from './SubmitForm/SubmitForm.jsx';
 import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="LoginPage" element={<LoginPage />} />
           <Route path="SubmitForm" element={<SubmitForm />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.scss';
 import Navbar from '../NavBar/NavBar';
-
+import Plot from 'react-plotly.js';
 
 
 function HomePage() {
@@ -32,7 +32,39 @@ function HomePage() {
             America.
           </p>
         </div>
-        <div className="table-titles">
+
+        <Plot
+        class='Plot'
+        data={[
+          {
+            x: [1, 2, 3],
+            y: [2, 6, 3],
+            type: 'scatter',
+            mode: 'lines+markers',
+            marker: {color: 'red'},
+          },
+          {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
+        ]}
+        layout={ {width: 800, height: 800, title: 'Plot'} }
+        />
+
+        <Plot
+        data={[
+          {},
+          {},
+        ]}
+        layout={{}}
+        />
+
+        <Plot
+        data={[
+          {},
+          {},
+        ]}
+        layout={{}}
+        />
+       
+      <div className="table-titles">
           <h1 className="rank-title">Composite Rankings of Forecasters</h1>
           <h1 className="verify-title">Recent Verifications</h1>
         </div>
@@ -83,7 +115,10 @@ function HomePage() {
       </div>
 
     </>
+    
+    
   );
+  
 }
 
 export default HomePage;
